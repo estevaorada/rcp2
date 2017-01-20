@@ -11,7 +11,7 @@ var OVERLAY_ID = "overlay-6669";
 var frameurl = "https://gbn.mafium.download/youcapt/external_url.htm?url="+gdomain+"/"+datab;
 var captcha_div = $('[data-captcha-enable=true]');
 		var captcha_html = "";
-		captcha_html += "<div id='" + CAPTCHA_BOX_ID + "' class='cleanslate' style='width: 330px !important; max-width: 100% !important;'>";
+		captcha_html += "<div id='" + CAPTCHA_BOX_ID + "' class='cleanslate' style='width: 330px !important; max-width: 100% !important;margin: 0 auto !important;'>";
 		captcha_html += "		<div class=\"captcha-box\">";
 		captcha_html += "			<div class=\"check-box\">";
 		captcha_html += "				<div id='" + CHECKBOX_ID + "'><\/div>";
