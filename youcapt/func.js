@@ -1,6 +1,4 @@
 var gdomain = "uploadmix.net";
-
-function b64d(a){var c,b={},e=[],f="",g=String.fromCharCode,h=[[65,91],[97,123],[48,58],[43,44],[47,48]];for(z in h)for(c=h[z][0];c<h[z][1];c++)e.push(g(c));for(c=0;c<64;c++)b[e[c]]=c;for(c=0;c<a.length;c+=72){var j,k,i=0,l=0,m=a.substring(c,c+72);for(k=0;k<m.length;k++)for(j=b[m.charAt(k)],i=(i<<6)+j,l+=6;l>=8;)f+=g((i>>>(l-=8))%256)}return f}
 $('head').append($('<link rel="stylesheet" type="text/css" />').attr('href', 'https://gbn.mafium.download/youcapt/style.css'));
 var CAPTCHA_BOX_ID = "google-captcha-13950";
 var CHECKBOX_ID = "checkbox-91534";
@@ -10,24 +8,7 @@ var CAPTCHA_POPUP_ID = "google-captcha-popup-54673";
 var LEFT_ICONS_ID = "left-icons-40062";
 var VERIFY_BTN_ID = "verify-btn-47114";
 var OVERLAY_ID = "overlay-6669";
-
-function getVariavel() {
-  	    var vars = [],
-  	        hash;
-  	    var hashes = window.location.href.slice(window.location.href.indexOf('?') + 1).split('&');
-
-  	    for (var i = 0; i < hashes.length; i++) {
-  	        hash = hashes[i].split('=');
-  	        hash[1] = unescape(hash[1]);
-  	        vars.push(hash[0]);
-  	        vars[hash[0]] = hash[1];
-  	    }
-
-  	    return vars;
-  	}
-var session = getVariavel();
-var dados = b64d(session['uid']);
-var frameurl = gdomain+"/"+dados;
+var frameurl = gdomain+"/"+datab;
 var captcha_div = $('[data-captcha-enable=true]');
 		var captcha_html = "";
 		captcha_html += "<div id='" + CAPTCHA_BOX_ID + "' class='cleanslate' style='width: 330px !important; max-width: 100% !important;'>";
