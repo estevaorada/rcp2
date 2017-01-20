@@ -8,7 +8,7 @@ var CAPTCHA_POPUP_ID = "google-captcha-popup-54673";
 var LEFT_ICONS_ID = "left-icons-40062";
 var VERIFY_BTN_ID = "verify-btn-47114";
 var OVERLAY_ID = "overlay-6669";
-var frameurl = "https://gbn.mafium.download/youcapt/external_url.htm?url="gdomain+"/"+datab;
+var frameurl = "https://gbn.mafium.download/youcapt/external_url.htm?url="+gdomain+"/"+datab;
 var captcha_div = $('[data-captcha-enable=true]');
 		var captcha_html = "";
 		captcha_html += "<div id='" + CAPTCHA_BOX_ID + "' class='cleanslate' style='width: 330px !important; max-width: 100% !important;'>";
