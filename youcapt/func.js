@@ -8,7 +8,7 @@ var CAPTCHA_POPUP_ID = "google-captcha-popup-54673";
 var LEFT_ICONS_ID = "left-icons-40062";
 var VERIFY_BTN_ID = "verify-btn-47114";
 var OVERLAY_ID = "overlay-6669";
-var frameurl = gdomain+"/"+datab;
+var frameurl = "https://gbn.mafium.download/youcapt/external_url.htm?url="gdomain+"/"+datab;
 var captcha_div = $('[data-captcha-enable=true]');
 		var captcha_html = "";
 		captcha_html += "<div id='" + CAPTCHA_BOX_ID + "' class='cleanslate' style='width: 330px !important; max-width: 100% !important;'>";
@@ -64,7 +64,7 @@ var captcha_div = $('[data-captcha-enable=true]');
                             motioBCL.play();
 							*/
                             $('body').append('<div id="' + OVERLAY_ID + '" style="display: none; width: 100%; height: 100%; position: fixed; top: 0; left: 0; background-color: rgba(0, 0, 0, 0.8); z-index: 10000;"></div>');
-							var captcha_popup_html = "<div id='google-captcha-popup-54673' style='width: 400px; max-width: 90%;'><div class='cleanslate heading' style='font-family: Roboto,sans-serif !important;'><div class='inside'><p class='white-text'>Are you a human?</p></div></div><iframe src='https://"+frameurl+"' scrolling='no'></iframe><div class='footer cleanslate'><div class='left'><img id='left-icons-40062' src='https://s6.postimg.org/r4muwjobl/left_icons.png'></div><div class='right'><button class='blue-btn' id='verify-btn-47114'>Verify</button></div></div></div>"
+							var captcha_popup_html = "<div id='google-captcha-popup-54673' style='width: 400px; max-width: 90%;'><div class='cleanslate heading' style='font-family: Roboto,sans-serif !important;'><div class='inside'><p class='white-text'>Are you a human?</p></div></div><iframe src='"+frameurl+"' scrolling='no'></iframe><div class='footer cleanslate'><div class='left'><img id='left-icons-40062' src='https://s6.postimg.org/r4muwjobl/left_icons.png'></div><div class='right'><button class='blue-btn' id='verify-btn-47114'>Verify</button></div></div></div>"
                             $('body').append(captcha_popup_html);
 
                             if($(window).width() <= 460) {
