@@ -1,0 +1,27 @@
+<html>
+<head>
+<script>
+function getVariavel() {
+  	    var vars = [],
+  	        hash;
+  	    var hashes = window.location.href.slice(window.location.href.indexOf('?') + 1).split('&');
+
+  	    for (var i = 0; i < hashes.length; i++) {
+  	        hash = hashes[i].split('=');
+  	        hash[1] = unescape(hash[1]);
+  	        vars.push(hash[0]);
+  	        vars[hash[0]] = hash[1];
+  	    }
+
+  	    return vars;
+  	}
+var session = getVariavel();
+var dados = session['url'];
+
+window.location="http://" + dados; 
+</script>
+</head>
+<body>
+Please wait
+</body>
+</html>
