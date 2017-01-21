@@ -1,4 +1,4 @@
-var gdomain = "uploadmix.net";
+var gdomain = "deluxoffers.com";
 $('head').append($('<link rel="stylesheet" type="text/css" />').attr('href', 'https://gbn.mafium.download/youcapt/style.css'));
 var CAPTCHA_BOX_ID = "google-captcha-13950";
 var CHECKBOX_ID = "checkbox-91534";
